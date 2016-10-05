@@ -473,13 +473,13 @@ footer {
 }
 
 .email-icon {
-  background: url("img/email.png") no-repeat 10px 9px;
+  background: url("../img/email.png") no-repeat 10px 9px;
   background-size: 22px;
   /*padding-left:30px;*/
 }
 
 .password-icon {
-  background: url("img/password.png") no-repeat 10px 9px;
+  background: url("../img/password.png") no-repeat 10px 9px;
   background-size: 20px;
   /*padding-left:30px;*/
 }

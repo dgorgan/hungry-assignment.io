@@ -18,4 +18,8 @@ $( document ).ready(function() {
 
     $(this).toggleClass('selected-tab');
   });
+
+  $('body > div.jumbotron > div > div.col-md-5.info-right > button').on('click', function() {
+    alert('#FF00FF is Dark Red, No Green, Dark Blue!');
+  })
 });
