@@ -83,12 +83,20 @@ p {
   border-bottom: none;
 }
 
-.active-tab a {
+.selected-tab a {
   color: white !important;
   background-image: -moz-linear-gradient( 0deg, rgb(187,23,78) 0%, rgb(243,82,54) 100%);
   background-image: -webkit-linear-gradient( 0deg, rgb(187,23,78) 0%, rgb(243,82,54) 100%);
   background-image: -ms-linear-gradient( 0deg, rgb(187,23,78) 0%, rgb(243,82,54) 100%);
 }
+
+.nav-tabs>li>a:hover {
+  color: white;
+  background-image: -moz-linear-gradient( 0deg, rgb(187,23,78) 0%, rgb(243,82,54) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(187,23,78) 0%, rgb(243,82,54) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(187,23,78) 0%, rgb(243,82,54) 100%);
+}
+
 
 .calendar-picker {
   /*position: relative;*/
@@ -101,7 +109,6 @@ p {
   position: absolute;
   right: 180px;
   top: 100px;
-  z-index: 300;
 }
 
 .hungry-bag-icn img {
@@ -305,6 +312,20 @@ color: white !important;
   margin-top: 50px;
 }
 
+/*.hungry-1:after {
+  content: " ";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: -moz-linear-gradient( 0deg, rgba(187,23,78,0.5) 0%, rgba(243,82,54,0.5) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgba(187,23,78,0.5) 0%, rgba(243,82,54,0.5) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgba(187,23,78,0.5) 0%, rgba(243,82,54,0.5) 100%);
+}*/
+
 .hungry-2 {
   background: url("../img/hungry_meal_2.png")no-repeat;
   background-size: contain;
@@ -327,6 +348,14 @@ color: white !important;
   width: 400px;
   height: 273px;
   margin-top: 80px;
+}
+
+.col-md-offset-1.col-md-5:hover, .col-md-offset-1.col-md-6:hover {
+    /*background-image: -moz-linear-gradient( 0deg, rgba(187,23,78,0.5) 0%, rgba(243,82,54,0.5) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgba(187,23,78,0.5) 0%, rgba(243,82,54,0.5) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgba(187,23,78,0.5) 0%, rgba(243,82,54,0.5) 100%);*/
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
 .footer-container {

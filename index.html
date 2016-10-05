@@ -63,7 +63,7 @@
        <ul class="nav nav-tabs nav-justified">
          <li role="presentation"><a href="#">Mon - Aug 29</a></li>
          <li role="presentation"><a href="#">Tue - Aug 30</a></li>
-         <li role="presentation" class="active-tab"><a href="#">Today - Aug 31</a></li>
+         <li role="presentation" class="selected-tab"><a href="#">Today - Aug 31</a></li>
          <li role="presentation"><a href="#">Thu - Sep 01</a></li>
          <li role="presentation"><a href="#">Fri - Sep 02</a></li>
        </ul>
@@ -180,7 +180,146 @@
           <span class="second">Dare To Order Something Different.</span>
         </div>
       <!-- </footer> -->
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </div> <!-- /container -->
+
+    <div class="sign-up-form row">
+     <div class="col-md-4 col-md-offset-4">
+       <button class="btn-lg continue-facebook">
+         <i class="fa fa-2x fa-facebook" aria-hidden="true"></i>
+         Continue With Facebook
+       </button>
+       <button class="btn-lg continue-google">
+         <i class="fa fa-2x fa-google" aria-hidden="true"></i>
+         Continue With Google
+      </button>
+       <span>OR</span>
+       <div class="input-wrapper">
+        <!-- <img src="img/email.png" alt="Email Icon" />  -->
+        <input type="email" placeholder="Email" class="email-icon">
+        <input type="email" placeholder="Password" class="password-icon">
+       </div>
+       <button class="btn-lg create-account">Create Account</button>
+     </div>
+   </div>
+
+    <style>
+
+    /*.input-wrapper {
+      width: 39%;
+      margin: 0 auto;
+    }*/
+
+    .fa-facebook {
+      margin-right: 20px;
+      font-size: 30px;
+      height: 30px;
+      vertical-align: middle;
+      background-color: #425294;
+    }
+
+    .fa-google {
+      margin-right: 10px;
+      font-size: 30px;
+      height: 30px;
+      vertical-align: middle;
+      background-color: #e36d5f;
+    }
+
+    .continue-facebook {
+      font-size: 13px;
+      color: white;
+      font-family: "Varela Round";
+      text-transform: uppercase;
+      border-radius: 3px;
+      background-color: #55639e;
+      opacity: 0.8;
+      width: 368px;
+      height: 50px;
+      letter-spacing: 2px;
+      border: none;
+      margin-top: 15px !important;
+    }
+
+    .continue-google {
+      font-size: 13px;
+      color: white;
+      font-family: "Varela Round";
+      text-transform: uppercase;
+      border-radius: 3px;
+      background-color: #e67c6f;
+      opacity: 0.8;
+      width: 368px;
+      height: 50px;
+      letter-spacing: 2px;
+      border: none;
+    }
+
+    .create-account {
+      font-size: 13px;
+      color: white;
+      font-family: "Varela Round";
+      text-transform: uppercase;
+      border-radius: 3px;
+      background-color: rgb(95, 208, 86);
+      opacity: 0.8;
+      width: 368px;
+      height: 50px;
+      letter-spacing: 2px;
+      border: none;
+      margin-bottom: 35px !important;
+    }
+
+    .sign-up-form input {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin: 35px 0;
+      padding: 15px 0;
+      border: none;
+      border-bottom: 1px solid #999999;
+    }
+
+    .email-icon {
+      background: url("img/email.png") no-repeat 10px 9px;
+      background-size: 22px;
+      /*padding-left:30px;*/
+    }
+
+    .password-icon {
+      background: url("img/password.png") no-repeat 10px 9px;
+      background-size: 20px;
+      /*padding-left:30px;*/
+    }
+
+    .sign-up-form {
+      text-align: center;
+      padding: 30px;
+    }
+
+    .sign-up-form .col-md-4 {
+      border: 1px solid #e3e3e3;
+      padding: 50px;
+    }
+
+    .sign-up-form .btn-lg {
+      margin: 15px 0;
+    }
+     .sign-up-form span {
+       margin: 15px 0;
+       display: block;
+       text-align: center;
+     }
+
+     .sign-up-form span {
+       margin-top: 25px;
+       font-size: 15px;
+       color: #4d4d4d;
+     }
+    </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
