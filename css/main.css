@@ -1,0 +1,410 @@
+
+
+/* ==========================================================================
+ Author's custom styles
+ ========================================================================== */
+
+
+
+ @font-face {
+   font-family: "VarelaRound-Regular";
+   src: url("../fonts/VarelaRound-Regular.otf") format("opentype");
+ }
+
+.body {
+  background: #000;
+}
+
+h1,h2,h3,h4,h5,h6,span,div {
+  font-family: VarelaRound-Regular;
+}
+p {
+  font-family: VarelaRound-Regular;
+  font-size: 16px !important;
+  color: #4d4d4d;
+}
+
+.container {
+  width: 75%;
+}
+.jumbotron {
+  width: 75%;
+  /*padding: 150px;*/
+  height: auto;
+  margin: 50px auto;
+}
+
+#jumbo-img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.info-right h3 {
+  margin-top: 0;
+  color: #4d4d4d;
+}
+
+.navbar {
+  background-image: -moz-linear-gradient( 0deg, rgb(187,23,78) 0%, rgb(243,82,54) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(187,23,78) 0%, rgb(243,82,54) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(187,23,78) 0%, rgb(243,82,54) 100%);
+  position: fixed;
+  left: -5px;
+  top: 0px;
+  z-index: 3;
+  border: none;
+}
+
+.nav-tabs.nav-justified {
+    position: absolute;
+    width: 55%;
+    border-bottom: 0;
+    margin: 0 auto;
+    left: 50%;
+    background-color: #f8f8f8;
+    transform: translateX(-50%);
+}
+
+.nav-tabs li a {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  border-bottom: none;
+  border-radius: 0;
+}
+
+.nav-tabs.nav-justified>li>a {
+  border-bottom: none;
+  border-radius: 0;
+}
+
+.nav-tabs.nav-justified>.active>a {
+  color: #4d4d4d;
+  border-bottom: none;
+}
+
+.active-tab a {
+  color: white !important;
+  background-image: -moz-linear-gradient( 0deg, rgb(187,23,78) 0%, rgb(243,82,54) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(187,23,78) 0%, rgb(243,82,54) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(187,23,78) 0%, rgb(243,82,54) 100%);
+}
+
+.calendar-picker {
+  /*position: relative;*/
+  height: 100px;
+  margin-top: 85px;
+  margin-bottom: -112px;
+}
+
+.hungry-bag-icn  {
+  position: absolute;
+  right: 180px;
+  top: 100px;
+  z-index: 300;
+}
+
+.hungry-bag-icn img {
+  width: 60px;
+}
+
+.number-of-orders {
+  position: relative;
+  background: url(../img/round-order-icon.png)center;
+  padding: 6px 9px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: white;
+  top: -35px;
+  right: 15px;
+}
+
+@media (min-width: 768px){
+.navbar-text {
+    font-family: "VarelaRound-Regular", serif;
+    font-size: 22px;
+    font-weight: bold;
+    float: none;
+    margin-right: 55px;
+    margin-left: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white !important;
+  }
+}
+
+/*a.navbar-brand {
+color: white !important;
+}*/
+
+.navbar-inverse .navbar-brand {
+  color: white;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+  display: block;
+  position: absolute;
+  right: 150px;
+  border-color: transparent !important;
+  }
+}
+
+.navbar-toggle .icon-bar {
+  height: 3px;
+}
+
+.fa-thumbs-o-up {
+  color: #ffca27;
+}
+
+.order-now {
+  color: white;
+  width: 350px;
+  height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: -moz-linear-gradient( 0deg, rgb(187,23,78) 0%, rgb(243,82,54) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(187,23,78) 0%, rgb(243,82,54) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(187,23,78) 0%, rgb(243,82,54) 100%);
+  border: none;
+  border-radius: 0;
+}
+
+.gluten-free {
+  font-size: 10px;
+  color: #4e95e8;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.halal {
+  font-size: 10px;
+  color: #9600e3;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.facts-separating-bulletpoint {
+  color: #999999;
+}
+
+.thumbs-up {
+  font-size: 20px;
+}
+
+.ratings {
+  padding: 15px 0;
+}
+
+.total-ratings {
+  margin-left: 5px;
+  color: #999999;
+}
+
+.chef-name-location {
+  /*float: right;*/
+  display: inline-block;
+  padding: 15px;
+}
+
+.chef-name-location span {
+  color: #999999;
+}
+
+.food-info p:first-child {
+  text-transform: uppercase;
+}
+
+.food-info p:nth-child(2) {
+  color: #999999;
+}
+
+.free-delivery {
+  position: relative;;
+  width: 75%;
+  height: 85px;
+  margin: 0 auto;
+  background: url("../img/free-delivery.png");
+  background-size: contain;
+}
+
+.free-delivery-placeholder-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: red;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.free-delivery-placeholder-text span:first-child {
+  color: #f35236;
+  margin-right: 3px;
+  font-weight: bold;
+}
+
+.free-delivery-placeholder-text span:nth-child(2) {
+  color: #999999;
+  margin-right: 3px;
+  font-weight: bold;
+}
+
+.free-delivery-placeholder-text span:last-child {
+  color: #ea1c5f;
+  font-weight: bold;
+}
+
+.food-hero-images {
+  margin-top: 35px;
+}
+
+.food-hero-images .col-md-offset-1 {
+  margin-bottom: 15px;
+}
+
+.food-hero-images .row:last-child {
+  margin-bottom: 30px;
+}
+
+.food-information-writing {
+  color: #4d4d4d;
+  background: #f5f5f5;
+  position: absolute;
+  width: 399px;
+  bottom: -83px;
+}
+
+.food-information-writing .col-md-offset-1 {
+  width: 90%;
+  margin-top: 3.5px;
+  padding-top: 8px;
+  letter-spacing: 0.5px;
+  margin-left: 0;
+  font-size: 13px;
+}
+
+.chef-signature {
+  color: #999999;
+  font-size: 10px;;
+}
+
+#hungry-bag-hero-section-icon {
+  width: 60px;
+  position: absolute;
+  bottom: 40px;
+  right: -13px;
+}
+.hungry-1 {
+  position: relative;
+  background: url("../img/hungry_meal_1.png")no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 273px;
+  margin-top: 50px;
+}
+
+.hungry-2 {
+  background: url("../img/hungry_meal_2.png")no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 273px;
+  margin-top: 50px;
+}
+
+.hungry-3 {
+  background: url("../img/hungry_meal_3.png")no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 273px;
+  margin-top: 80px;
+}
+
+.hungry-4 {
+  background: url("../img/hungry_meal_4.png")no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 273px;
+  margin-top: 80px;
+}
+
+.footer-container {
+  background: url(../img/Feed-your-Office.png)center no-repeat;
+  position: relative;
+  width: 75%;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-size: contain;
+}
+
+footer {
+  text-align: center;
+}
+
+.footer-copywriting {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.footer-copywriting h2 {
+  font-family: "Monoton", cursive;
+  text-transform: uppercase;
+  font-size: 37px;
+  margin-bottom: 35px;
+  color: rgb(234, 28, 95);
+}
+
+.first {
+  font-family: "Catamaran", sans-serif;
+  text-transform: uppercase;
+  color: #ea1c5f;
+}
+
+.second {
+  font-family: "Catamaran", sans-serif;
+  text-transform: uppercase;
+  color: #f25236;
+}
+
+
+
+/*.Feed_your_Office {
+  font-size: 37px;
+  font-family: "Prisma";
+  color: rgb(234, 28, 95);
+  line-height: 2.134;
+  text-align: center;
+  -moz-transform: matrix( 3.85653042209576,0,0,3.85653042209576,0,0);
+  -webkit-transform: matrix( 3.85653042209576,0,0,3.85653042209576,0,0);
+  -ms-transform: matrix( 3.85653042209576,0,0,3.85653042209576,0,0);
+  position: absolute;
+  left: 1314.727px;
+  top: 4016.443px;
+  z-index: 88;
+}*/
+
+
+
+ /*.Header_Banner {
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 2880px;
+   height: 5000px;
+   z-index: 6;
+ }
+ .Rectangle_1 {
+   background-image: -moz-linear-gradient( 0deg, rgb(187,23,78) 0%, rgb(243,82,54) 100%);
+   background-image: -webkit-linear-gradient( 0deg, rgb(187,23,78) 0%, rgb(243,82,54) 100%);
+   background-image: -ms-linear-gradient( 0deg, rgb(187,23,78) 0%, rgb(243,82,54) 100%);
+   position: absolute;
+   left: -5px;
+   top: 0px;
+   width: 2888px;
+   height: 183px;
+   z-index: 3;
+ }*/
