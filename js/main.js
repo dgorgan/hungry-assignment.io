@@ -20,6 +20,6 @@ $( document ).ready(function() {
   });
 
   $('body > div.jumbotron > div > div.col-md-5.info-right > button').on('click', function() {
-    alert('#FF00FF is Dark Red, No Green, Dark Blue!');
+    alert('#FF00FF is Red, No Green, Blue!');
   })
 });
