@@ -26,9 +26,7 @@ $(document).ready(function() {
     $('.order-now').on('click', function(e) {
         $('body').data('form-focus', true);
         e.stopPropagation();
-        $('.jumbotron').addClass('background-modal-opacity');
-        $('.calendar-picker').addClass('background-modal-opacity');
-        $('.hungry-bag-icn').addClass('background-modal-opacity');
+        $('.jumbotron, .calendar-picker').addClass('background-modal-opacity');
         $('.form-signup').addClass('open').fadeIn('fast');
     })
 
