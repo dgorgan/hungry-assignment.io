@@ -32,7 +32,7 @@ $(document).ready(function() {
         $('.form-signup').addClass('open').fadeIn('fast');
     })
 
-    $('body').on("click", 'div:not(.form-signup.open)', function(e){
+    $('div').on("click", 'div:not(.form-signup.open)', function(e){
       e.stopPropagation()
       if ( $('body').data('form-focus') ) {
         $('body').data('form-focus', false);
@@ -41,5 +41,10 @@ $(document).ready(function() {
         $('.calendar-picker').removeClass('background-modal-opacity');
         $('.hungry-bag-icn').removeClass('background-modal-opacity');
       }
+    })
+
+    $('.input-wrapper').on("click", function(e){
+      e.stopPropagation()
+      console.log('ello')
     })
 });
